@@ -1,0 +1,5 @@
+#image-collection li {
+    float: left;
+    display: block;
+    margin: 5px;
+  }
