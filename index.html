@@ -8,7 +8,16 @@
         <div id="container">
             <h1 id="title">Stick Figure Shuffler</h1>
             <div id="stick-pic"></div>
-            <button id="shuffle-btn">SHUFFLE</button>
+            <div id="buttons-container">
+                <button id="shuffle-btn" class="btn-style">SHUFFLE</button>
+                <div id="timer-group">
+                    <button id="timer-btn" class="btn-style">Change every _ seconds</button>
+                    <input id="timer-input-el" placeholder="How many seconds?" type="number">
+                    <button id="stop-timer-btn" class="btn-style">Stop Auto-Shuffle</button>
+                </div>
+                
+            </div>
+           
         </div>
         <script src="index.js"></script>
     </body>
