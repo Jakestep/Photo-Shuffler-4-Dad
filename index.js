@@ -22,12 +22,19 @@ function shuffle() {
 document.getElementById("shuffle-btn").addEventListener('click', function(){
     shuffle()
 })
-
+window.refreshIntervalId;
+var shuffling = false;
 document.getElementById('timer-btn').addEventListener('click', function() {
+    if (shuffling) {
+        clearInterval(window.refreshIntervalId)
+        shuffling = false
+    }
     let time = document.getElementById('timer-input-el').value * 1000
     window.refreshIntervalId = setInterval(function() {shuffle()}, time)
+    shuffling = true;
 })
 
 document.getElementById('stop-timer-btn').addEventListener('click', function() {
     clearInterval(window.refreshIntervalId)
+    shuffling = false;
 })
