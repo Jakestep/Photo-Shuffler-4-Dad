@@ -1,5 +1,45 @@
-#image-collection li {
-    float: left;
-    display: block;
-    margin: 5px;
-  }
+html {
+  height: 100%
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('images/background-img.jpg');
+  
+}
+
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#shuffle-btn {
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+#stick-pic {
+  display: flex;
+  width: 400px;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid hotpink;
+  margin: 4px;
+  background-image: url('images/defualt.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#title {
+  font-size: 25px;
+  margin: 5px;
+}
